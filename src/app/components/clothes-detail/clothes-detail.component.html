@@ -1,0 +1,95 @@
+<head>
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<div>
+  <app-navi [totalPrice]="$totalPrice"></app-navi>
+</div>
+<div class="generic">
+  <div class="images">
+    <img
+      *ngFor="let clothes of clothesImages"
+      src="https://localhost:44372{{ clothes.imagePath }}"
+    />
+  </div>
+  <div class="details">
+    <div class="header">
+      <h4>{{ clothesDetail?.brandName }}</h4>
+
+      <h5 id="price">{{ clothesDetail?.clothesPrice | currency: "₺" }}</h5>
+    </div>
+    <h3 id="clothesName">{{ clothesDetail?.clothesName }}</h3>
+
+    <div class="productdetails" id="productdetails">
+      <div class="detailheader dropdown" id="detailheader">
+        <button>
+          Product Details
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            fill="currentColor"
+            class="bi bi-caret-down space1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+            />
+          </svg>
+        </button>
+        <div class="additionalinfo" id="additionalinfo">
+          <p class="infos">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium, aliquam!
+          </p>
+          <p class="infos">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium, aliquam!
+          </p>
+          <p class="infos" id="last">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium, aliquam!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sizes">
+      <h4 id="selectsize">Beden Seçiniz:</h4>
+      <div class="listofsize">
+        <div *ngFor="let size of sizes; let i = index">
+          <input
+            type="radio"
+            class="sizebuttons"
+            id="materialUnchecked{{ i }}"
+            name="materialExampleRadios"
+            mdbInput
+          />
+          <label
+            class="list-size"
+            for="materialUnchecked{{ i }}"
+            (click)="selectSize(size)"
+            >{{ size.size }}
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="last">
+      <form class="numberofclothes" [formGroup]="quantityForm">
+        <button class="buttonfornumber" (click)="deleteQuantity()">-</button
+        ><input
+          type="number"
+          value="{{ quantityOfClothes }}"
+          id="quantity"
+          name="quantity"
+          formControlName="quantity"
+        />
+        <button class="buttonfornumber" (click)="addQuantity()">+</button>
+      </form>
+
+      <button class="addtobag" (click)="addToBag()">Sepete Ekle</button>
+    </div>
+  </div>
+</div>

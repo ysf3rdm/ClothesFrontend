@@ -27,9 +27,15 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js", 
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./src/app/components/navi/app.js"
+            ]
           },
           "configurations": {
             "production": {

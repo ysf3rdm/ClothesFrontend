@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.registerForm {
+  max-height: 550px;
+  border-radius: 24px;
+  background-color: rgb(249, 246, 255);
+  font-family: "Poppins", sans-serif;
+  width: 600px;
+  height: 600px;
+  padding: 40px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.registerForm input[type="email"],
+.registerForm input[type="password"],
+.registerForm input[type="text"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+}
+.registerForm h3 {
+  color: #520000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.registerForm input[type="email"]:focus,
+.registerForm input[type="password"]:focus,
+.registerForm input[type="text"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+.registerForm button {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  cursor: pointer;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  outline: none;
+}
+.registerForm button:hover {
+  background: #2ecc71;
+}
+.routerlogin {
+  text-decoration: none;
+}

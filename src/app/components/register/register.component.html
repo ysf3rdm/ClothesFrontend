@@ -1,0 +1,56 @@
+<div>
+  <app-navi></app-navi>
+</div>
+<div class="registerForm">
+  <form [formGroup]="registerForm">
+    <h3 class="header">Kayıt Ol</h3>
+
+    <div class="form-floating">
+      <input
+        formControlName="firstName"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="İsim"
+      />
+      <label for="floatingInput">İsim</label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="lastName"
+        type="text"
+        class="form-control"
+        id="floatingInput1"
+        placeholder="Soyisim"
+      />
+      <label for="floatingInput1">Soyisim</label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="email"
+        type="email"
+        class="form-control"
+        id="floatingEmail"
+        placeholder="name@example.com"
+      />
+      <label for="floatingEmail">Email </label>
+    </div>
+    <div class="form-floating">
+      <input
+        formControlName="password"
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+      />
+      <label for="floatingPassword">Parola</label>
+    </div>
+
+    <button (click)="register()">Kayıt Ol</button>
+    <p>
+      Zaten hesabınız var mı?
+      <a routerLink="/login" class="routerlogin">Giriş Yap</a>
+    </p>
+    <p>&copy; 2017–2021</p>
+  </form>
+</div>

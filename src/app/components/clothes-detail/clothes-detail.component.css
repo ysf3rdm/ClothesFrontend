@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.generic {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details {
+  max-width: 28rem;
+  left: auto !important;
+  align-items: center;
+  margin-bottom: 500px;
+  margin-right: 125px;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+.images {
+  padding-left: 97px;
+  padding-top: 30px;
+}
+.images img {
+  width: 760px;
+  height: 1033px;
+}
+.header {
+  width: 448px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.details h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+#clothesName {
+  margin-bottom: 8px;
+  width: 390px;
+  word-wrap: normal;
+}
+#price {
+  font-family: "Poppins", sans-serif;
+}
+.productdetails {
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.infos {
+  margin: 5px 0 5px 0;
+  text-align: left;
+  line-height: 1.5;
+  display: flex;
+}
+.additionalinfo {
+  height: 200px;
+  width: auto;
+}
+.additionalinfo #last {
+  border-bottom: 1px solid black;
+}
+#selectsize {
+  margin-bottom: 17px;
+}
+
+.sizes {
+  width: 300px;
+  margin-bottom: 25px;
+}
+.list-size {
+  font-weight: 900;
+  color: rgb(29, 29, 29);
+  width: 35px;
+  text-align: center;
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.listofsize {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.listofsize input[type="radio"] {
+  display: none;
+}
+.sizebuttons:checked + label {
+  border-bottom: 2.5px solid rgba(0, 0, 0, 1);
+}
+
+.list-size:hover {
+  border-bottom: 2.5px solid rgba(0, 0, 0, 1);
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown div {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+.dropdown button {
+  border: none;
+  background: none;
+}
+
+.dropdown button:focus + .additionalinfo {
+  opacity: 1;
+  pointer-events: all;
+  cursor: auto;
+  transform: translateY(0px);
+}
+
+.numberofclothes {
+  border: 1px solid #cacaca;
+  display: flex;
+  background: none;
+  margin-right: 10px;
+}
+.buttonfornumber {
+  outline: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  padding: 12px;
+}
+#quantity {
+  outline: none;
+  display: block;
+  background: none;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+}
+.addtobag {
+  outline: none;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  padding: 0 52px 0 52px !important;
+  height: 58px;
+  width: 460px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  cursor: pointer;
+  margin: 0;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.addtobag:hover {
+  color: black;
+  background-color: white;
+}

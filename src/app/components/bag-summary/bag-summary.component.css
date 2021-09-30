@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.clothes {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+}
+.image img {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 100px;
+  height: auto;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.detail {
+  margin-top: 25px;
+  width: 280px;
+  align-items: center;
+}
+.brand {
+  text-transform: uppercase;
+}
+.price {
+  margin-right: 25px;
+  text-align: end;
+}
+.buttons {
+  margin-right: 25px;
+  text-align: end;
+}
+.totalPrice {
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+}
+.emptybag {
+  text-align: center;
+  align-items: center;
+}
+.button {
+  margin-right: 15px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.gotobag {
+  outline: none;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  padding: 0 52px 0 52px !important;
+  height: 35px;
+  width: 180px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.gotobag:hover {
+  color: black;
+  background-color: white;
+}
+.trash {
+  cursor: pointer;
+}

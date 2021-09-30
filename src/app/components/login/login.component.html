@@ -1,0 +1,38 @@
+<div>
+  <app-navi></app-navi>
+</div>
+<form [formGroup]="loginForm" class="loginform">
+  <h3 class="header">Giriş Yap</h3>
+
+  <div class="form-floating">
+    <input
+      formControlName="email"
+      type="email"
+      class="form-control"
+      id="floatingInput"
+      placeholder="name@example.com"
+    />
+    <label for="floatingInput">Email</label>
+  </div>
+
+  <div class="form-floating">
+    <input
+      formControlName="password"
+      type="password"
+      class="form-control color"
+      id="floatingPassword"
+      placeholder="Password"
+    />
+    <label for="floatingPassword">Password</label>
+  </div>
+
+  <div>
+    <label> <input type="checkbox" value="remember-me" /> Beni Hatırla </label>
+  </div>
+  <button (click)="login()">Giriş Yap</button>
+  <p>
+    Hesabınız yok mu?
+    <a routerLink="/register" class="routerregister">Hemen Kaydolun</a>
+  </p>
+  <p>&copy; 2021-2022</p>
+</form>
